@@ -19,15 +19,12 @@ int main()
         {
             if (col == 1 || col == n)
             {
-                cout << "*";
+                cout << "* ";
             }
-            
-            
-            if (row > n / 2 && (col == s1 || col == s2))
+            else if (row > n / 2 && (row == col || col+row == n+1))
             {
                 cout << "* ";
-                s1++;
-                s2--;
+                
             }
             else
             {

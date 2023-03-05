@@ -23,7 +23,7 @@ int main()
             cout << " ";
         }
         for(int col = 1 ; col <= star ; col++){
-            cout << "*";
+            cout << count;
         }
         if(row <= (n/2)){
             outerSpaccing--;
