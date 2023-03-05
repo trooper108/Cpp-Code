@@ -22,16 +22,25 @@ int main()
         {
             cout << " ";
         }
+        int temp = count;
         for(int col = 1 ; col <= star ; col++){
-            cout << count;
+            cout << temp;
+            if(col <= star/2){
+                temp++;
+            }
+            else{
+                temp--;
+            }
         }
         if(row <= (n/2)){
             outerSpaccing--;
             star += 2;
+            count++;
         }
         else{
             outerSpaccing++;
             star -=2;
+            count--;
         }
         cout << endl;
     }
