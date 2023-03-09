@@ -15,6 +15,13 @@ void reverse(vector<int> &vec, int si, int ei)
     return;
 }
 
+void rotate(vector<int> &arr,int k){
+    int n = arr.size();
+    reverse(arr, 0 , n-1);
+    reverse(arr,0,k-1);
+    reverse(arr,k,n-1);
+}
+
 int main()
 {
     int n, k;
@@ -27,9 +34,7 @@ int main()
         arr.push_back(x);
     }
     k = k % n;
-    reverse(arr, 0 , n-1);
-    reverse(arr,0,k-1);
-    reverse(arr,k,n-1);
+    rotate(arr,k);
     for(auto it : arr){
         cout << it<< " ";
     }
