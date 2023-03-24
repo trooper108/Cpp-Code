@@ -11,7 +11,7 @@ void Sort(vector<int> &arr){
             arr[i] = temp;
         }
     }
-
+    return;
 }
 
 int main(){
@@ -30,4 +30,5 @@ int main(){
         cout << it << " ";
     }
     cout << endl;
+    return 0;
 }
